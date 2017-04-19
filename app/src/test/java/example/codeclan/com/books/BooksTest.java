@@ -19,12 +19,12 @@ public class BooksTest {
 
     @Before
     public void before() {
-        books = new Books(6, "New Moon", "Stephenie Meyer");
+        books = new Books(21, "New Moon", "Stephenie Meyer");
     }
 
     @Test
     public void getRankingTest(){
-        assertEquals((Integer)6, books.getRanking());
+        assertEquals((Integer)21, books.getRanking());
 
     }
     @Test

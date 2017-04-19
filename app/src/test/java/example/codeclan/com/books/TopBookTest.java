@@ -14,7 +14,7 @@ public class TopBookTest {
     @Test
     public void getListTest(){
         TopBooks topBooks =  new TopBooks();
-        assertEquals(5, topBooks.getList().size());
+        assertEquals(20, topBooks.getList().size());
     }
 
 

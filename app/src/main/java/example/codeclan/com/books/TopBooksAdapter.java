@@ -21,7 +21,7 @@ public class TopBooksAdapter extends ArrayAdapter<Books> {
     }
     @Override
     public View getView(int position, View listItemView, ViewGroup parent){
-       if (listItemView == null) {
+       if(listItemView == null) {
            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.books_item, parent, false);
        }
         Books currentBook = getItem(position);
@@ -33,6 +33,8 @@ public class TopBooksAdapter extends ArrayAdapter<Books> {
 
         TextView author = (TextView) listItemView.findViewById(R.id.author);
         author.setText(currentBook.getAuthor());
+
+        listItemView.setTag(currentBook);
 
         return listItemView;
        }
