@@ -19,24 +19,24 @@ public class BooksTest {
 
     @Before
     public void before() {
-        books = new Books(2, "The Hobbit", "J.R.R. Tolkein");
+        books = new Books(6, "New Moon", "Stephenie Meyer");
     }
 
     @Test
     public void getRankingTest(){
-        assertEquals((Integer)2, books.getRanking());
+        assertEquals((Integer)6, books.getRanking());
 
     }
     @Test
     public void getTitleTest(){
-        assertEquals("The Hobbit",books.getTitle());
+        assertEquals("New Moon",books.getTitle());
 
 
 
     }
     @Test
     public void getAuthorTest(){
-        assertEquals("J.R.R. Tolkein",books.getAuthor());
+        assertEquals("Stephenie Meyer",books.getAuthor());
 
 
 
